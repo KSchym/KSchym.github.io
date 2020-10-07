@@ -6,7 +6,10 @@ var b2 = document.getElementById("b2");
 var b3 = document.getElementById("b3");
 
 function showScale() {
-    let output = calcScale(a1,a2,a3);
+    let output = calcScale(a1, a2, a3);
+    if (Number.isNaN(output[0]) || Number.isNaN(output[1]) || Number.isNaN(output[2]))
+        return;
+
     let button = document.getElementById("skaleButton");
     if (button.value == "Vektor1 skaliert mit Nummer X")
         button.value = `Skalierter Vektor1: (${output[0]}|${output[1]}|${output[2]})`;
@@ -16,6 +19,9 @@ function showScale() {
 
 function showAddition() {
     let output = calcAddition();
+    if (Number.isNaN(output[0]) || Number.isNaN(output[1]) || Number.isNaN(output[2]))
+        return;
+
     let button = document.getElementById("additionButton");
     if (button.value == "Addition")
         button.value = `Addition:(${output[0]}|${output[1]}|${output[2]})`
@@ -25,6 +31,9 @@ function showAddition() {
 
 function showSubstraction() {
     let output = calcSubstraction();
+    if (Number.isNaN(output[0]) || Number.isNaN(output[1]) || Number.isNaN(output[2]))
+        return;
+
     let button = document.getElementById("subtractionButton");
     if (button.value == "Differenz/Vektor zwischen 2 Punkten")
         button.value = `Differenz/Vektor zwischen 2 Punkten:(${output[0]}|${output[1]}|${output[2]})`
@@ -34,6 +43,9 @@ function showSubstraction() {
 
 function showMultiplication() {
     let output = calcMultiplication();
+    if (Number.isNaN(output[0]) || Number.isNaN(output[1]) || Number.isNaN(output[2]))
+        return;
+
     let button = document.getElementById("multiplicationButton");
     if (button.value == "Multiplikation/Kreuzprodukt")
         button.value = `Multiplikation/Kreuzprodukt:(${output[0]}|${output[1]}|${output[2]})`
@@ -42,16 +54,22 @@ function showMultiplication() {
 }
 
 function showMagnitude() {
-    let lenghtammount = calcMagnitude(a1,a2,a3);
+    let output = calcMagnitude(a1, a2, a3);
+    if (Number.isNaN(output))
+        return;
+
     let button = document.getElementById("lengthButton");
     if (button.value == "Länge des Vektor 1")
-        button.value = "Länge: √" + lenghtammount;
+        button.value = `Länge: √${output}`;
     else
         button.value = "Länge des Vektor 1";
 }
 
 function showDotProduct() {
     let output = calcScalar();
+    if (Number.isNaN(output))
+        return;
+
     let button = document.getElementById("skalarButton");
     if (button.value == "Skalarprodukt")
         button.value = `skalar = ${output}`;
@@ -61,6 +79,9 @@ function showDotProduct() {
 
 function showAngle() {
     let output = calcAngle();
+    if (Number.isNaN(output))
+        return;
+
     let button = document.getElementById("angelButton");
     if (button.value == "Winkel der beiden Vektoren")
         button.value = `Winkel = ${output.toFixed(3)}°`;
