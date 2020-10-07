@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+alar<!DOCTYPE html>
 <html>
 
 <head>
@@ -24,50 +24,50 @@
         Vektor 2, b3:
         <input type="text" id="b3" class="css-input">
     </p>
-    <div id="sumOutcome" class="test">
+    <div class="test">
         <div class="tooltip">
             <span class="tooltiptext">a1 + b1 &#010;a2 + b2 &#010;a3 + b3</span>
-            <input type="button" value="Addition" onclick="addition()" class="myButton" id="additionButton"></span>
+            <input type="button" value="Addition" onclick="showAddition()" class="myButton" id="additionButton"></span>
         </div>
     </div>
-    <div id="diffOutcome" class="test">
+    <div class="test">
         <div class="tooltip">
             <span class="tooltiptext">b1 - a1 &#010;b2 - a2 &#010;b3 - a3</span>
-            <input type="button" value="Subtraktion/Vektor zwischen 2 Punkten" onclick="subtraction()" class="myButton"
+            <input type="button" value="Subtraktion/Vektor zwischen 2 Punkten" onclick="showSubstraction()" class="myButton"
                 id="subtractionButton">
         </div>
     </div>
-    <div id="productOutcome" class="test">
+    <div class="test">
         <div class="tooltip">
             <span class="tooltiptext">a2*b3 - a3*b2&#010;a3*b1 - a1*b3&#010;a1*b2 - a2*b1</span>
-            <input type="button" value="Multiplikation/Kreuzprodukt" onclick="multiplication()" class="myButton"
+            <input type="button" value="Multiplikation/Kreuzprodukt" onclick="showMultiplication()" class="myButton"
                 id="multiplicationButton">
         </div>
     </div>
-    <div id="lengthOutcome" class="test">
+    <div class="test">
         <div class="tooltip">
             <span class="tooltiptext">√(a1^2+a2^2+a3^2)</span>
-            <input type="button" value="Länge des Vektor 1" onclick="ammount()" class="myButton" id="lenghtButton">
+            <input type="button" value="Länge des Vektor 1" onclick="showMagnitude()" class="myButton" id="lengthButton">
         </div>
     </div>
-    <div id="skalarOutcome" class="test">
+    <div class="test">
         <div class="tooltip">
             <span class="tooltiptext">a1*b1 + a2*b2 + a3*b3</span>
-            <input type="button" value="Skalarprodukt" onclick="skalar()" class="myButton" id="skalarButton">
+            <input type="button" value="Skalarprodukt" onclick="showDotProduct()" class="myButton" id="skalarButton">
         </div>
     </div>
-    <div id="angelOutcome" class="test">
+    <div class="test">
         <div class="tooltip">
             <span class="tooltiptext">(vektor1 * vektor2)/&#010;(|vektor1| * |Vektor2|)</span>
-            <input type="button" value="Winkel der beiden Vektoren" onclick="angel()" class="myButton" id="angelButton">
+            <input type="button" value="Winkel der beiden Vektoren" onclick="showAngle()" class="myButton" id="angelButton">
         </div>
     </div>
-    <div id="skaleOutcome" class="test">
+    <div class="test">
         <div class="tooltip">
             <span class="tooltiptext">(vektor1 * vektor2)/&#010;(|vektor1| * |Vektor2|)</span>
             <div>
                 <input type="text" id="extraNumber" class="extraNumber">
-                <input type="button" value="Vektor1 skaliert mit Nummer X" onclick="skale()" class="extraButton" id="skaleButton">
+                <input type="button" value="Vektor1 skaliert mit Nummer X" onclick="showScale()" class="extraButton" id="skaleButton">
             </div>
         </div>
     </div>
