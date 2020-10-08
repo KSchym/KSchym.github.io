@@ -1,0 +1,16 @@
+:root{
+    --backgroundcolor: #ffffff;
+    --text-defaul-color: #000000;
+    --text-headline-color: #599bb3;
+    --button-main-color: #599bb3;
+    --button-secondary-color: #408c99;
+    --button-border-color:  #29668f;
+    --button-text-color: #ffffff;
+    --input-border-color:  #ffffff;
+    --input-background-color: #ffffff;
+    --input-text-color: #000000;
+    --tooltip-text-color: #ffffff;
+    --tooltip-background-color: #000000;
+    --modeswitch-background-color: #ffffff;
+    --modeswitch-border-color: #e3e3e3;
+}

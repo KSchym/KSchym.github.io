@@ -1,20 +1,20 @@
 body {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #242424;
-    color: #8d8d8d;
+    background-color: var(--background-color);
+    color: var(--text-defaul-color);
 }
 h1 {
-    text-shadow: -4px 4px 4px #424242;
+    text-shadow: -4px 4px 4px var(--text-headline-color);
 }
 .myButton {
-	background:linear-gradient(to bottom, #424242 5%, #707070 100%);
-	background-color:#424242;
+	background: linear-gradient(to bottom, var(--button-main-color) 5%, var(--button-secondary-color) 100%);
+	background-color:var(--button-main-color);
 	border-radius:9px;
-	border:1px solid #292929;
+	border:1px solid var(--button-border-color);
 	display:inline-block;
 	cursor:pointer;
-	color:#adadad;
+	color: var(--button-text-color);
 	font-family:Arial;
 	font-size:15px;
 	font-weight:bold;
@@ -24,8 +24,8 @@ h1 {
     margin-bottom: 7.5px;
 }
 .myButton:hover {
-	background:linear-gradient(to bottom, #707070 5%, #424242 100%);
-	background-color:#707070;
+	background: linear-gradient(to bottom, var(--button-secondary-color) 5%, var(--button-main-color) 100%);
+	background-color:var(--button-secondary-color);
 }
 .myButton:active {
 	position:relative;
@@ -33,13 +33,13 @@ h1 {
 }
 
 .extraButton {
-	background:linear-gradient(to bottom, #424242 5%, #707070 100%);
-	background-color:#292929;
+	background: linear-gradient(to bottom, var(--button-main-color) 5%, var(--button-secondary-color) 100%);
+	background-color:var(--button-main-color);
 	border-radius:9px;
-	border:1px solid #292929;
+	border:1px solid var(--button-border-color);
 	display:inline-block;
 	cursor:pointer;
-    color:#adadad;
+    color:var(--button-text-color);
 	font-family:Arial;
 	font-size:15px;
 	font-weight:bold;
@@ -49,8 +49,8 @@ h1 {
     margin-bottom: 7.5px;
 }
 .extraButton:hover {
-	background:linear-gradient(to bottom, #707070 5%, #424242 100%);
-	background-color:#707070;
+	background: linear-gradient(to bottom, var(--button-secondary-color) 5%, var(--button-main-color) 100%);
+	background-color:var(--button-secondary-color);
 }
 .extraButton:active {
 	position:relative;
@@ -62,15 +62,15 @@ h1 {
     padding: 5px;
     font-size: 14px;
     border-width: 0px;
-    border-color: #424242;
-    background-color: #adadad;
-    color: #000000;
+    border-color: var(--input-border-color);
+    background-color: var(--input-background-color);
+    color: var(--input-text-color);
     border-style: solid;
     border-radius: 6px;
-    box-shadow: 0px 0px 5px #5c5c5c;
+    box-shadow: 0px 0px 5px var(--button-main-color);
 }
 .css-input:focus {
-    outline-color: #292929;
+    outline-color: var(--button-border-color);
 }
 
 .extraNumber {
@@ -81,12 +81,12 @@ h1 {
     width: 45px;
     line-height: 24px;
     border-width: 0px;
-    border-color: #424242;
-    background-color: #adadad;
-    color: #000000;
+    border-color: var(--input-border-color);
+    background-color: var(--input-background-color);
+    color: var(--input-text-color);
     border-style: solid;
     border-radius: 6px;
-    box-shadow: 0px 0px 5px #5c5c5c;
+    box-shadow: 0px 0px 5px var(--button-main-color);
 }
 
 .tooltip{
@@ -102,8 +102,8 @@ h1 {
   margin-left: -76px;
   position: absolute;
   width:170px;
-  color: #adadad;
-  background: #000000;
+  color: var(--tooltip-text-color);
+  background: var(--tooltip-background-color);
   line-height: 30px;
   text-align: center;
   visibility: hidden;
@@ -120,10 +120,10 @@ h1 {
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: black transparent transparent transparent;
+    border-color: var(--tooltip-background-color) transparent transparent transparent;
   }
 
-.onoffswitch {
+  .onoffswitch {
     position: relative; width: 40px;
     margin-left: 97%;
     margin-top: -3%;
@@ -138,24 +138,24 @@ h1 {
 .onoffswitch-label {
     display: block; overflow: hidden; cursor: pointer;
     height: 17px; padding: 0; line-height: 17px;
-    border: 2px solid #E3E3E3; border-radius: 17px;
-    background-color: #adadad;
+    border: 2px solid var(--modeswitch-border-color); border-radius: 17px;
+    background-color: var(--modeswitch-background-color);
     transition: background-color 0.3s ease-in;
 }
 .onoffswitch-label:before {
     content: "";
     display: block; width: 17px; margin: 0px;
-    background: #adadad;
+    background: var(--modeswitch-background-color);
     position: absolute; top: 0; bottom: 0;
     right: 21px;
-    border: 2px solid #E3E3E3; border-radius: 17px;
+    border: 2px solid var(--modeswitch-border-color); border-radius: 17px;
     transition: all 0.3s ease-in 0s; 
 }
 .onoffswitch-checkbox:checked + .onoffswitch-label {
-    background-color: #292929;
+    background-color: var(--button-main-color);
 }
 .onoffswitch-checkbox:checked + .onoffswitch-label, .onoffswitch-checkbox:checked + .onoffswitch-label:before {
-   border-color: #292929;
+   border-color: var(--button-main-color);
 }
 .onoffswitch-checkbox:checked + .onoffswitch-label:before {
     right: 0px; 

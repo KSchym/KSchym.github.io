@@ -141,7 +141,7 @@ function colormode() {
     darkmode = !darkmode;
     let currentmode = document.getElementById("colormode");
     if (darkmode)
-        currentmode.href = "./darkmystyle.css"
+        currentmode.href = "./colorsDark.css"
     else
-        currentmode.href = "./brightmystyle.css"
+        currentmode.href = "./colorsBright.css"
 }
