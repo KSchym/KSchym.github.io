@@ -11,14 +11,18 @@
 
 <body>
     <h1>Cheatsheet</h1>
-    <div class="onoffswitch">
-        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" tabindex="0" checked
-            onchange="colormode()">
-        <label class="onoffswitch-label" for="myonoffswitch">
-            <span class="onoffswitch-inner"></span>
-            <span class="onoffswitch-switch"></span>
-        </label>
+    <div style="float: right;">
+        <p id="modetxt">Darkmode</p>
+        <div class="onoffswitch">
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" tabindex="0"
+                checked onchange="colormode()">
+            <label class="onoffswitch-label" for="myonoffswitch">
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+            </label>
+        </div>
     </div>
+    <br>
     <p>Vektor 1, a1:
         <input type="text" id="a1" class="css-input">
         Vektor 1, a2:
@@ -34,6 +38,7 @@
         Vektor 2, b3:
         <input type="text" id="b3" class="css-input">
     </p>
+    <br>
     <div class="test">
         <div class="tooltip">
             <span class="tooltiptext">a1 + b1 &#010;a2 + b2 &#010;a3 + b3</span>
