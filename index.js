@@ -5,6 +5,8 @@ var b1 = document.getElementById("b1");
 var b2 = document.getElementById("b2");
 var b3 = document.getElementById("b3");
 
+var darkmode = false;
+
 function showScale() {
     let output = calcScale(a1, a2, a3);
     if (Number.isNaN(output[0]) || Number.isNaN(output[1]) || Number.isNaN(output[2]))
@@ -136,9 +138,10 @@ function calcAngle() {
 }
 
 function colormode() {
+    darkmode = !darkmode;
     let currentmode = document.getElementById("colormode");
-    if (currentmode.href == "file:///C:/Users/kaisc/Desktop/hmtl%20test/verktoren/brightmystyle.css")
-        currentmode.href = "file:///C:/Users/kaisc/Desktop/hmtl%20test/verktoren/darkmystyle.css"
+    if (darkmode)
+        currentmode.href = "./darkmystyle.css"
     else
-        currentmode.href = "file:///C:/Users/kaisc/Desktop/hmtl%20test/verktoren/brightmystyle.css"
+        currentmode.href = "./brightmystyle.css"
 }
