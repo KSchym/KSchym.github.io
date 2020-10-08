@@ -134,3 +134,11 @@ function calcScalar() {
 function calcAngle() {
     return Math.acos(calcScalar() / (calcMagnitude(a1, a2, a3) * calcMagnitude(b1, b2, b3))) * (180 / Math.PI);
 }
+
+function colormode() {
+    let currentmode = document.getElementById("colormode");
+    if (currentmode.href == "file:///C:/Users/kaisc/Desktop/hmtl%20test/verktoren/brightmystyle.css")
+        currentmode.href = "file:///C:/Users/kaisc/Desktop/hmtl%20test/verktoren/darkmystyle.css"
+    else
+        currentmode.href = "file:///C:/Users/kaisc/Desktop/hmtl%20test/verktoren/brightmystyle.css"
+}
